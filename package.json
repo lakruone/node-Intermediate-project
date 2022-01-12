@@ -1,0 +1,21 @@
+{
+  "name": "goal-api",
+  "version": "1.0.0",
+  "description": "node intermediate project",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "author": "Lakruwan",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "koa": "^2.13.4",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^10.1.1",
+    "pg": "^8.7.1",
+    "sequelize": "^6.11.0",
+    "sequelize-cli": "^6.3.0",
+    "uuid": "^8.3.2"
+  }
+}
