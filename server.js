@@ -4,10 +4,15 @@ require('dotenv').config()
 const cors = require('@koa/cors');
 const jwt = require('koa-jwt');
 const jwtrsa = require('jwks-rsa');
+const schedule = require('node-schedule');
 
 const StudentRoutes = require('./router/student');
 const BasicRoutes = require('./router/basic');
+const backgroundJobs = require('./api/jobs/backgroundJobs');
 const app = new Koa();
+
+//Execute background jobs
+backgroundJobs();
 
 const whitelist = [
     '/',
